@@ -27,6 +27,8 @@ class AccountRepositoryTest {
         account.setName("miyoung");
         account.setNickName("kkamsi");
 
+        accountRepository
+
         Account save = accountRepository.save(account);
         System.out.println(save);
     }
