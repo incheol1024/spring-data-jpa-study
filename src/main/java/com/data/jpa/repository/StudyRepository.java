@@ -1,4 +1,7 @@
 package com.data.jpa.repository;
 
-public class StudyRepository {
+import com.data.jpa.domain.Study;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface StudyRepository extends JpaRepository<Study, Long> {
 }

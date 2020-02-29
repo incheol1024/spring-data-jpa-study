@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/springdata
+    username: incheol
+    password: incheol
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        format_sql: true
+        jdbc:
+          lob_contextual_creation: true
+    show-sql: true
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
