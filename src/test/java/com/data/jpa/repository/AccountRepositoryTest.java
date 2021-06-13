@@ -26,9 +26,6 @@ class AccountRepositoryTest {
         Account account = new Account();
         account.setName("miyoung");
         account.setNickName("kkamsi");
-
-        accountRepository
-
         Account save = accountRepository.save(account);
         System.out.println(save);
     }
@@ -66,7 +63,7 @@ class AccountRepositoryTest {
 
         System.out.println("=========");
 
-//        all.stream().forEach(System.out::println);
+        all.stream().forEach(study -> study.getAccount());
     }
 
 
